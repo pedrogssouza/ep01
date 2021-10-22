@@ -1,21 +1,30 @@
 #include "Fila.h"
 #include <iostream>
+#include <vector>
 
 Fila::Fila(int tamanho){
-    this->tamanho=tamanho;
+    this->tamanho = tamanho;
     datagramas = new Datagrama*[tamanho];
 }
 
 Fila::~Fila(){
-    cout << "Fila com " << this->getSize() << " datagrama(s) destruida" << endl;
-    for(int i = 0; i < this->getSize(); i++) datagramas[i]->imprimir();
+    cout << "Fila com " << quantidade << " datagrama(s) destruida" << endl;
+    for(int i = 0; i < this->getSize(); i++){
+            delete datagramas[i];
+    }
+    delete[] datagramas;
 }
 
-bool Fila::enqueue(Datagrama* d) {
-    if (quantidade >= tamanho)
+bool Fila::enqueue (Datagrama *d) {
+    if (fim == inicio - 1 || (fim == tamanho && inicio == 0)) { /*condicao do overflow */
         return false;
-
-    datagramas[quantidade++] = d;
+    }
+    datagramas[fim] = d;
+    fim++;
+    if (fim == tamanho + 1) { /*vetor circular*/
+        fim = 0;
+    }
+    quantidade++;
     return true;
 }
 
@@ -24,18 +33,24 @@ Datagrama* Fila::dequeue(){
         return NULL;
     }
 
-    Datagrama *primeiroDatagrama = datagramas[0];
+    Datagrama* datagramaDeletado = datagramas[inicio];
+    inicio++;
+    if (inicio == tamanho + 1) {
+        inicio = 0;
+    }
+    quantidade--;
+    return datagramaDeletado;
 }
+
 
 int Fila::getSize(){
     return quantidade;
 }
 
 bool Fila::isEmpty(){
-    return quantidade==0;
+    return quantidade == 0;
 }
 
 void Fila::imprimir(){
-    cout << "Fila com " << this->getSize() << " datagrama(s)" << endl;
-    for(int i = 0; i < this->getSize(); i++) delete datagramas[i];
+    cout << "Fila com " << quantidade << " datagrama(s)" << endl;
 }

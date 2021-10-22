@@ -3,8 +3,7 @@
 
 #include "Datagrama.h"
 
-class Fila
-{
+class Fila{
     public:
         Fila(int tamanho);
         ~Fila();
@@ -16,9 +15,11 @@ class Fila
 
         void imprimir();
     private:
-        Datagrama **datagramas;
+        Datagrama** datagramas;
         int tamanho;
-        int quantidade=0;
+        int quantidade = 0;
+        int inicio = 0;
+        int fim = 0;
 };
 
 #endif // FILA_H

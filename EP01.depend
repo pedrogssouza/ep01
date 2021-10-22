@@ -1,7 +1,8 @@
 # depslib dependency file v1.0
-1632500422 source:c:\users\pedri\desktop\ep01\ep01\main.cpp
+1632511028 source:c:\users\pedri\desktop\ep01\ep01\main.cpp
 	<iostream>
 	"Datagrama.h"
+	"Fila.h"
 
 1632496507 c:\users\pedri\desktop\ep01\ep01\datagrama.h
 	<string>
@@ -10,10 +11,169 @@
 	"Datagrama.h"
 	<iostream>
 
-1632500401 source:c:\users\pedri\desktop\ep01\ep01\fila.cpp
+1632510884 source:c:\users\pedri\desktop\ep01\ep01\fila.cpp
 	"Fila.h"
 	<iostream>
+	<vector>
 
-1632500363 c:\users\pedri\desktop\ep01\ep01\fila.h
+1632510816 c:\users\pedri\desktop\ep01\ep01\fila.h
 	"Datagrama.h"
+
+1634749208 source:c:\users\pedri\desktop\ep01\datagrama.cpp
+	"Datagrama.h"
+	<iostream>
+
+1634749208 c:\users\pedri\desktop\ep01\datagrama.h
+	<string>
+
+1634759686 source:c:\users\pedri\desktop\ep01\fila.cpp
+	"Fila.h"
+	<iostream>
+	<vector>
+
+1634759678 c:\users\pedri\desktop\ep01\fila.h
+	"Datagrama.h"
+
+1634838907 source:c:\users\pedri\desktop\ep01\roteador.cpp
+	"Roteador.h"
+	"TabelaDeRepasse.h"
+	<iostream>
+
+1634827791 c:\users\pedri\desktop\ep01\roteador.h
+	"Datagrama.h"
+	"TabelaDeRepasse.h"
+	"Evento.h"
+
+1634759542 c:\users\pedri\desktop\ep01\tabeladerepasse.h
+	"Fila.h"
+	"Roteador.h"
+
+1634826360 c:\users\pedri\desktop\ep01\evento.h
+	"Datagrama.h"
+	"Roteador.h"
+
+1634838995 source:c:\users\pedri\desktop\ep01\tabeladerepasse.cpp
+	"TabelaDeRepasse.h"
+	<iostream>
+
+1634839189 source:c:\users\pedri\desktop\ep01\evento.cpp
+	"Evento.h"
+	<iostream>
+	<vector>
+
+1634856319 source:c:\users\user\downloads\ep01 - atualizado\ep01\datagrama.cpp
+	"Datagrama.h"
+	<iostream>
+
+1634856319 c:\users\user\downloads\ep01 - atualizado\ep01\datagrama.h
+	<string>
+
+1634856319 source:c:\users\user\downloads\ep01 - atualizado\ep01\evento.cpp
+	"Evento.h"
+	<iostream>
+	<vector>
+
+1634856319 c:\users\user\downloads\ep01 - atualizado\ep01\evento.h
+	"Datagrama.h"
+	"Roteador.h"
+
+1634856320 c:\users\user\downloads\ep01 - atualizado\ep01\roteador.h
+	"Datagrama.h"
+	"TabelaDeRepasse.h"
+	"Evento.h"
+
+1634856320 c:\users\user\downloads\ep01 - atualizado\ep01\tabeladerepasse.h
+	"Fila.h"
+	"Roteador.h"
+
+1634868380 c:\users\user\downloads\ep01 - atualizado\ep01\fila.h
+	"Datagrama.h"
+
+1634856319 source:c:\users\user\downloads\ep01 - atualizado\ep01\fila.cpp
+	"Fila.h"
+	<iostream>
+	<vector>
+
+1634867017 source:c:\users\user\downloads\ep01 - atualizado\ep01\main.cpp
+	<iostream>
+	"Datagrama.h"
+	"Fila.h"
+	"TabelaDeRepasse.h"
+
+1634856320 source:c:\users\user\downloads\ep01 - atualizado\ep01\rede.cpp
+	"Rede.h"
+	<iostream>
+
+1634856320 c:\users\user\downloads\ep01 - atualizado\ep01\rede.h
+	"Roteador.h"
+
+1634856320 source:c:\users\user\downloads\ep01 - atualizado\ep01\tabeladerepasse.cpp
+	"TabelaDeRepasse.h"
+	<iostream>
+
+1634866350 source:c:\users\user\downloads\ep01 - atualizado\ep01\roteador.cpp
+	"Roteador.h"
+	"TabelaDeRepasse.h"
+	<iostream>
+
+1634866565 source:c:\users\user\downloads\ep01 - atualizado\ep01\agendador.cpp
+	"Agendador.h"
+
+1634865742 c:\users\user\downloads\ep01 - atualizado\ep01\agendador.h
+	"Rede.h"
+
+1634866566 source:c:\users\pedri\desktop\ep01 - atualizado\ep01\agendador.cpp
+	"Agendador.h"
+
+1634865744 c:\users\pedri\desktop\ep01 - atualizado\ep01\agendador.h
+	"Rede.h"
+
+1634856322 c:\users\pedri\desktop\ep01 - atualizado\ep01\rede.h
+	"Roteador.h"
+
+1634856322 c:\users\pedri\desktop\ep01 - atualizado\ep01\roteador.h
+	"Datagrama.h"
+	"TabelaDeRepasse.h"
+	"Evento.h"
+
+1634856320 c:\users\pedri\desktop\ep01 - atualizado\ep01\datagrama.h
+	<string>
+
+1634856322 c:\users\pedri\desktop\ep01 - atualizado\ep01\tabeladerepasse.h
+	"Fila.h"
+	"Roteador.h"
+
+1634868382 c:\users\pedri\desktop\ep01 - atualizado\ep01\fila.h
+	"Datagrama.h"
+
+1634856320 c:\users\pedri\desktop\ep01 - atualizado\ep01\evento.h
+	"Datagrama.h"
+	"Roteador.h"
+
+1634856320 source:c:\users\pedri\desktop\ep01 - atualizado\ep01\datagrama.cpp
+	"Datagrama.h"
+	<iostream>
+
+1634856320 source:c:\users\pedri\desktop\ep01 - atualizado\ep01\evento.cpp
+	"Evento.h"
+	<iostream>
+	<vector>
+
+1634868746 source:c:\users\pedri\desktop\ep01 - atualizado\ep01\fila.cpp
+	"Fila.h"
+	<iostream>
+	<vector>
+
+1634866352 source:c:\users\pedri\desktop\ep01 - atualizado\ep01\roteador.cpp
+	"Roteador.h"
+	"TabelaDeRepasse.h"
+	<iostream>
+
+1634856322 source:c:\users\pedri\desktop\ep01 - atualizado\ep01\tabeladerepasse.cpp
+	"TabelaDeRepasse.h"
+	<iostream>
+
+1634869700 source:c:\users\pedri\desktop\ep01 - atualizado\ep01\rede.cpp
+	"Rede.h"
+	<iostream>
 
