@@ -24,6 +24,7 @@ void Roteador::receber(Datagrama *d) {
         return;
     }
 
+    cout << "Oi" << endl;
     fila->enqueue(d);
 }
 

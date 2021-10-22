@@ -44,7 +44,6 @@ int main(){
     int opcao;
     do{
         cout << "Simulador de Rede" << endl;
-        cout << "---" << endl;
         cout << "1) Enviar um datagrama" << endl;
         cout << "2) Passar tempo" << endl;
         cout << "0) Sair" << endl;
@@ -58,15 +57,15 @@ int main(){
             int destino;
             string  mensagem;
 
-            cout << "Endereço do roteador de origem: ";
+            cout << "Endereco do roteador de origem: ";
             cin >> origem ;
+            cout << "Instante: ";
+            cin >> instante ;
+            cout << "Endereco de destino: ";
+            cin >> destino ;
+            cout << "Mensagem: ";
+            cin >> mensagem ;
             cout << endl;
-            cout << "Instante: " << endl;
-            cin >> instante;
-            cout << "Endereço de destino: " << endl;
-            cin >> destino;
-            cout << "Mensagem: " << endl;
-            cin >> mensagem;
 
             Datagrama *d = new Datagrama(origem, destino, mensagem);
 
@@ -82,6 +81,15 @@ int main(){
 
         }else if(opcao==2){
             int quantidadeTempo;
+            cout << "Quantidade de tempo: ";
+            cin >> quantidadeTempo;
+            cout << endl;
+
+            for (int i = 1; i <= quantidadeTempo; i++){
+                cout << "Instante " << a->getInstante() << endl;
+                cout << "---" << endl;
+                a->processar();
+            }
 
         }
 

@@ -29,10 +29,9 @@ bool Agendador::agendar(int instante, Roteador* r, Datagrama* d){
 void Agendador::processar(){
     for(int i = 0; i < quantidade; i++){
         if(instante == eventos[i]->getInstante()){
-            Evento* eventoTemporario = eventos[i];
+            //Evento* eventoTemporario = eventos[i];
+            (eventos[i]->getDestino())->receber(eventos[i]->getDatagrama());
             delete eventos[i];
-            (eventoTemporario->getDestino())->receber(eventoTemporario->getDatagrama());
-
         }
     }
 
