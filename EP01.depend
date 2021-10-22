@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1632500422 source:c:\users\pedri\desktop\ep01\ep01\main.cpp
+	<iostream>
+	"Datagrama.h"
+
+1632496507 c:\users\pedri\desktop\ep01\ep01\datagrama.h
+	<string>
+
+1632496544 source:c:\users\pedri\desktop\ep01\ep01\datagrama.cpp
+	"Datagrama.h"
+	<iostream>
+
+1632500401 source:c:\users\pedri\desktop\ep01\ep01\fila.cpp
+	"Fila.h"
+	<iostream>
+
+1632500363 c:\users\pedri\desktop\ep01\ep01\fila.h
+	"Datagrama.h"
+
